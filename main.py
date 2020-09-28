@@ -126,18 +126,18 @@ class AuraBot(commands.Bot):
         self.loop = asyncio.get_event_loop()
 
         self.default_skin = "CID_175_Athena_Commando_M_Celestial"
-        self.default_backpack = "BID_023_Pinkbear"
+        self.default_backpack = "BID_138_Celestial"
         self.default_pickaxe = "Pickaxe_Lockjaw"
         self.banner = "INFLUENCERBANNER57"
         self.banner_colour = "defaultcolor15"
         self.default_level = 999
         self.default_bp_tier = 999999999
-        self.default_emote = "EID_JustHome"
+        self.default_emote = "EID_KpopDance04"
 
         self.sanic_app = sanic_app
         self.server = server
-        self.welcome_message = "Thank you for using SilverBot"
-        self.whisper_message = "Thank you for using SilverBot"
+        self.welcome_message = "Thank you for using SilverBot!"
+        self.whisper_message = "Thank you for using SilverBot!"
 
 
     async def set_and_update_member_prop(self, schema_key: str, new_value: Any) -> None:
