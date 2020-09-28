@@ -80,7 +80,7 @@ def store_device_auth_details(email, details):
 
 async def get_authorization_code():
     while True:
-        response = await aioconsole.ainput("Go to https://bit.ly/epicauthcode and sign in as "  + os.getenv("EMAIL") + " and enter the response: ")
+        response = await aioconsole.ainput("Go to https://rebrand.ly/authcode and sign in as "  + os.getenv("EMAIL") + " and enter the response: ")
         if "redirectUrl" in response:
             response = json.loads(response)
             if "?code" not in response["redirectUrl"]:
