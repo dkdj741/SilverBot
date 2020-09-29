@@ -136,8 +136,8 @@ class AuraBot(commands.Bot):
 
         self.sanic_app = sanic_app
         self.server = server
-        self.welcome_message = "Thank you for using SilverBot!"
-        self.whisper_message = "Thank you for using SilverBot!"
+        self.welcome_message = "Thank you for using SilverBot! Make sure to join the discord discord.gg/dqe3yAU and check out the website over at rebrand.ly/silverbot"
+        self.whisper_message = "Thank you for using SilverBot! Make sure to join the discord discord.gg/dqe3yAU and check out the website over at rebrand.ly/silverbot"
 
 
     async def set_and_update_member_prop(self, schema_key: str, new_value: Any) -> None:
