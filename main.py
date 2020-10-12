@@ -125,12 +125,12 @@ class AuraBot(commands.Bot):
         self.fortnite_api = FortniteAPIAsync.APIClient()
         self.loop = asyncio.get_event_loop()
 
-        self.default_skin = "CID_175_Athena_Commando_M_Celestial"
+        self.default_skin = "CID_847_Athena_Commando_M_Soy_2AS3C"
         self.default_backpack = "BID_138_Celestial"
         self.default_pickaxe = "Pickaxe_Lockjaw"
         self.banner = "INFLUENCERBANNER57"
         self.banner_colour = "defaultcolor15"
-        self.default_level = 999
+        self.default_level = 999999
         self.default_bp_tier = 999999999
         self.default_emote = "EID_KpopDance04"
 
