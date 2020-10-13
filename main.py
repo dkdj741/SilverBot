@@ -47,7 +47,7 @@ except ModuleNotFoundError as e:
 
 
 print(crayons.cyan(f'\nThank you for using silverbot'))
-print(crayons.cyan(f'Discord server: https://discord.gg/dqe3yAU- For support, questions, etc.'))
+print(crayons.cyan(f'Discord server: https://discord.gg/8KDB4mp - For support, questions, etc.'))
 
 sanic_app = sanic.Sanic(__name__)
 server = None
@@ -101,7 +101,7 @@ async def get_authorization_code():
 
 class AuraBot(commands.Bot):
     def __init__(self, email : str, password : str, **kwargs) -> None:
-        self.status = '🔥discord.gg/dqe3yAU🔥'
+        self.status = '🔥discord.gg/8KDB4mp🔥'
         self.kairos = 'cid_028_ff2b06cf446376144ba408d3482f5c982bf2584cf0f508ee3e4ba4a0fd461a38'
         device_auth_details = get_device_auth_details().get(email, {})
         super().__init__(
@@ -136,8 +136,8 @@ class AuraBot(commands.Bot):
 
         self.sanic_app = sanic_app
         self.server = server
-        self.welcome_message = "Thank you for using SilverBot! Make sure to join the discord discord.gg/dqe3yAU and check out the website over at rebrand.ly/silverbot"
-        self.whisper_message = "Thank you for using SilverBot! Make sure to join the discord discord.gg/dqe3yAU and check out the website over at rebrand.ly/silverbot"
+        self.welcome_message = "Welcome {DISPLAY_NAME} Make sure to join the discord discord.gg/8KDB4mp and check out the website over at rebrand.ly/silverbot"
+        self.whisper_message = "Thank you for using SilverBot! Make sure to join the discord discord.gg/8KDB4mp and check out the website over at rebrand.ly/silverbot"
 
 
     async def set_and_update_member_prop(self, schema_key: str, new_value: Any) -> None:
@@ -1983,7 +1983,6 @@ async def ping_urls() -> None:
     while True:
         for repl in urls:
             asyncio.get_event_loop().create_task(ping_repl(repl))
-        await asyncio.sleep(1800)
 
 asyncio.get_event_loop().run_until_complete(ping_urls)
 
