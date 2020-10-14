@@ -1,5 +1,3 @@
-from forever import forever
-forever()
 import asyncio
 import os
 import uvloop
@@ -215,7 +213,7 @@ class AuraBot(commands.Bot):
                 )
             )
 
-        await asyncio.sleep(1)
+        
 
         if self.default_party_member_config.cls is not fortnitepy.party.JustChattingClientPartyMember:
             await self.party.me.clear_emote()
@@ -1979,12 +1977,6 @@ async def ping_repl(url: str) -> None:
                 pass
   except:
     pass
-
-async def ping_urls() -> None:
-    urls = [os.getenv("REPL_SLUG") + "." + os.getenv("REPL_OWNER") + ".repl.co", os.getenv("REPL_SLUG") + "--" + os.getenv("REPL_OWNER") + ".repl.co"]
-    while True:
-        for repl in urls:
-            asyncio.get_event_loop().create_task(ping_repl(repl))
-
-asyncio.get_event_loop().run_until_complete(ping_urls)
+from forever import forever
+forever()
 
