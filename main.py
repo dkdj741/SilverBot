@@ -1,3 +1,5 @@
+from forever import forever
+forever()
 import asyncio
 import os
 import uvloop
